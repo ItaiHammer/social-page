@@ -127,11 +127,6 @@ body {
   border-radius: 15px;
 }
 
-.link-container:hover {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
 .link-img {
   height: 50%;
   width: auto;
@@ -187,6 +182,11 @@ body {
     height: 30vw;
   }
 
+  .body {
+    border-top-left-radius: 15vw;
+    border-top-right-radius: 15vw;
+  }
+
   .name {
     font-size: 6vw;
   }
@@ -236,6 +236,11 @@ body {
     height: 15vw;
   }
 
+  .body {
+    border-top-left-radius: 8vw;
+    border-top-right-radius: 8vw;
+  }
+
   .name {
     font-size: 5vw;
   }
@@ -278,6 +283,11 @@ body {
   .pfp {
     width: 15vw;
     height: 15vw;
+  }
+
+  .body {
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
   }
 
   .name {
@@ -323,5 +333,10 @@ body {
 
   .footer-icon {
     width: 2vw;
+  }
+
+  .link-container:hover {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 }
