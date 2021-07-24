@@ -1,0 +1,18 @@
+$color1: #0d1b2a;
+$color2: #1b263b;
+$color3: #415a77;
+$color4: #778da9;
+$color5: #e0e1dd;
+
+.NotFound {
+  background: $color1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $color5;
+  font-size: 10vw;
+  font-weight: bold;
+}
