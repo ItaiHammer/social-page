@@ -23,6 +23,7 @@ a {
 }
 
 body {
+  background: #1b263b;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -30,7 +31,7 @@ body {
 .background {
   background: $background center center;
   width: 100vw;
-  height: 45vh;
+  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
@@ -71,6 +72,16 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 2;
+  animation: 3s body ease-in-out;
+}
+
+@keyframes body {
+  from {
+    top: 130vh;
+  }
+  to {
+    top: 30vh;
+  }
 }
 
 .info-container {
@@ -105,7 +116,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5vw;
   margin-bottom: 5vh;
 }
 
@@ -175,11 +185,21 @@ body {
 @media screen and (min-width: 0) {
   .pfp-container {
     top: 27vh;
+    animation: 3s pfp0 ease-in-out;
   }
 
   .pfp {
     width: 30vw;
     height: 30vw;
+  }
+
+  @keyframes pfp0 {
+    from {
+      top: 130vh;
+    }
+    to {
+      top: 27vh;
+    }
   }
 
   .body {
@@ -201,11 +221,11 @@ body {
 
   .links-container {
     min-height: 45vh;
-    gap: 4vw;
   }
 
   .link-container {
     height: 20vw;
+    padding-bottom: 5vw;
   }
 
   .link-text-container {
@@ -217,23 +237,33 @@ body {
   }
 
   .footer-text-container {
-    gap: 2vw;
     font-size: 3.5vw;
   }
 
   .footer-icon {
     width: 5vw;
+    padding: 1vw;
   }
 }
 
 @media screen and (min-width: 700px) {
   .pfp-container {
     top: 25vh;
+    animation: 3s pfp700 ease-in-out;
   }
 
   .pfp {
     width: 15vw;
     height: 15vw;
+  }
+
+  @keyframes pfp700 {
+    from {
+      top: 130vh;
+    }
+    to {
+      top: 25vh;
+    }
   }
 
   .body {
@@ -266,7 +296,6 @@ body {
   }
 
   .footer-text-container {
-    gap: 1vw;
     font-size: 2vw;
   }
 
@@ -278,11 +307,21 @@ body {
 @media screen and (min-width: 1200px) {
   .pfp-container {
     top: 14vh;
+    animation: 3s pfp1200 ease-in-out;
   }
 
   .pfp {
     width: 15vw;
     height: 15vw;
+  }
+
+  @keyframes pfp1200 {
+    from {
+      top: 130vh;
+    }
+    to {
+      top: 14vh;
+    }
   }
 
   .body {
@@ -311,11 +350,11 @@ body {
   .links-container {
     width: 80%;
     min-height: 5vh;
-    gap: 1.5vw;
   }
 
   .link-container {
     height: 10vw;
+    padding-bottom: 3vw;
   }
 
   .link-text-container {
@@ -327,12 +366,12 @@ body {
   }
 
   .footer-text-container {
-    gap: 1vw;
     font-size: 1.5vw;
   }
 
   .footer-icon {
     width: 2vw;
+    padding: 1vw;
   }
 
   .link-container:hover {
